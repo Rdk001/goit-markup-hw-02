@@ -2,26 +2,33 @@
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --primary-white-color: #f5f5f5;
-  --secondary-white-color: #ffffff;
+  --secondary-white-color: #f5f4fa;
+  --white-bg-color: #ffffff;
   --dark-bg-color: #2f303a;
   --blue-bg-color: #2196f3;
 }
 
 body {
   background: var(--primary-white-color);
+  font-family: Roboto, Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
 }
 
 /* Навигація */
 .header {
-  background-color: var(--secondary-white-color);
+  background-color: var(--white-bg-color);
 }
 
 .logo {
   color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
-.logo .link {
-  text-decoration: none;
+.accent {
+  color: var(--blue-bg-color);
 }
 
 .site-nav .link {
@@ -29,9 +36,7 @@ body {
 }
 
 .site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--blue-bg-color);
-}
+.site-nav .link:focus,
 .site-nav .link.current {
   color: var(--blue-bg-color);
 }
@@ -39,6 +44,7 @@ body {
 .contacts .link {
   color: var(--primary-text-color);
 }
+
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--blue-bg-color);
@@ -54,89 +60,132 @@ body {
 }
 
 /* герой */
+
 .hero {
   background-color: var(--dark-bg-color);
-  color: var(--secondary-white-color);
+  color: var(--white-bg-color);
 }
+
 .hero-title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
 }
-.button {
+
+.button.primary {
+  font-family: inherit;
   background-color: var(--blue-bg-color);
-  color: var(--secondary-white-color);
+  color: var(--white-bg-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
 }
+/* кнопки портфолио */
+.button.secondary {
+  background-color: var(--secondary-white-color);
+  color: var(--primary-text-color);
+  cursor: pointer;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  background-color: var(--blue-bg-color);
+  color: var(--white-bg-color);
+}
+
 /* Особливості */
+
 .list-title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
 }
+
 .list-text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-}
-/* Чим ми займаемось */
-.section-title {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
-/* Наша команда */
-.our-team {
-  background-color: #f5f4fa;
-}
-.photo-title {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
-.photo-text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
+.list {
+  list-style: none;
+}
+/* Чим ми займаемось */
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+
+  text-align: center;
+}
+
+/* Наша команда */
+
+.our-team {
+  background-color: #f5f4fa;
+}
+
+.photo-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.photo-text {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+/* Наші проекти */
+
+.projects-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+.projects-text {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+/* Футер */
+
 .footer {
   background-color: var(--dark-bg-color);
 }
+
 .logo.footer {
-  color: var(--secondary-white-color);
+  color: var(--white-bg-color);
+  text-decoration: none;
 }
+
 .address {
-  color: var(--secondary-white-color);
+  color: var(--white-bg-color);
 }
-.link.footer {
+
+.footer.link {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer.link:hover,
+.footer.link:focus {
+  color: var(--blue-bg-color);
 }

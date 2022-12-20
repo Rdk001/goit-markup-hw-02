@@ -1,15 +1,27 @@
 :root {
   --primary-text-color: #212121;
-  --secondary-color: #757575;
+  --secondary-text-color: #757575;
+  --primary-white-color: #f5f5f5;
+  --secondary-white-color: #ffffff;
+  --dark-bg-color: #2f303a;
+  --blue-bg-color: #2196f3;
 }
 
 body {
-  background: #f5f5f5;
+  background: var(--primary-white-color);
 }
 
 /* Навигація */
 .header {
-  background-color: #ffffff;
+  background-color: var(--secondary-white-color);
+}
+
+.logo {
+  color: #000000;
+}
+
+.logo .link {
+  text-decoration: none;
 }
 
 .site-nav .link {
@@ -18,7 +30,10 @@ body {
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #2196f3;
+  color: var(--blue-bg-color);
+}
+.site-nav .link.current {
+  color: var(--blue-bg-color);
 }
 
 .contacts .link {
@@ -26,11 +41,11 @@ body {
 }
 .contacts .link:hover,
 .contacts .link:focus {
-  color: #2196f3;
+  color: var(--blue-bg-color);
 }
 
 .contacts .number {
-  color: var(--secondary-color);
+  color: var(--secondary-text-color);
   text-decoration: none;
 }
 
@@ -40,7 +55,8 @@ body {
 
 /* герой */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--dark-bg-color);
+  color: var(--secondary-white-color);
 }
 .hero-title {
   font-family: "Roboto";
@@ -52,6 +68,12 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+.button {
+  background-color: var(--blue-bg-color);
+  color: var(--secondary-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 /* Особливості */
 .list-title {
@@ -71,7 +93,7 @@ body {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: var(--secondary-color);
+  color: var(--secondary-text-color);
 }
 /* Чим ми займаемось */
 .section-title {
@@ -103,5 +125,18 @@ body {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.03em;
-  color: var(--secondary-color);
+  color: var(--secondary-text-color);
+}
+
+.footer {
+  background-color: var(--dark-bg-color);
+}
+.logo.footer {
+  color: var(--secondary-white-color);
+}
+.address {
+  color: var(--secondary-white-color);
+}
+.link.footer {
+  color: rgba(255, 255, 255, 0.6);
 }

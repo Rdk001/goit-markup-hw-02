@@ -1,0 +1,45 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --primary-white-color: #f5f5f5;
+  --secondary-white-color: #ffffff;
+  --dark-bg-color: #2f303a;
+  --blue-bg-color: #2196f3;
+}
+body {
+  background: var(--primary-white-color);
+}
+
+/* Навигація */
+.header {
+  background-color: var(--secondary-white-color);
+}
+
+.logo .link {
+  text-decoration: none;
+}
+
+.site-nav .link {
+  color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--blue-bg-color);
+}
+.site-nav .link.current {
+  color: var(--blue-bg-color);
+}
+
+.contacts .link {
+  color: var(--primary-text-color);
+}
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--blue-bg-color);
+}
+
+.contacts .number {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}

@@ -179,6 +179,10 @@ body {
   color: var(--secondary-text-color);
 }
 
+.project-link {
+  text-decoration: none;
+}
+
 /* Футер */
 
 .footer {
